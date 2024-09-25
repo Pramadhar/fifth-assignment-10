@@ -25,7 +25,7 @@ document.getElementById('main-money').innerText = finalMoney;
 const div = document.createElement('div')
 div.innerHTML =`
 <div style="border: 2px solid grey; padding: 45px; margin-bottom: 20px ;  rounded-lg;">
-<h3 class="text-3xl ">${newInputField} taka is Donate for Flood at Noakhali, Bangladesh  </h3>
+<h3 class="text-3xl ">${newInputField} Aid for Injured in the Quota Movement </h3>
 </div>
 
 `

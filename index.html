@@ -109,7 +109,7 @@
           <button id="addMoneyIdthird" class="btn">
             <img src="assets/coin.png" alt="" srcset="">
             600 bdt</button>
-          <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+          <h1 id="lining" class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
           <p class="py-6">
            Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference.
           </p>
@@ -150,6 +150,32 @@
 </main>
 <!-- main part end -->
 <script>
+
+// color
+
+document.addEventListener('DOMContentLoaded', function () {
+const donationButton = document.getElementById('donationButton');
+  const historyButton = document.getElementById('historyButton');
+donationButton.style.backgroundColor = 'green';
+    donationButton.style.color = 'white';
+    historyButton.style.backgroundColor = '';
+    historyButton.style.color = 'black';
+ donationButton.addEventListener('click', function () {
+ donationButton.style.backgroundColor = 'green';
+ donationButton.style.color = 'white';
+historyButton.style.backgroundColor = 'transparent';
+historyButton.style.color = 'black';
+    });
+ historyButton.addEventListener('click', function () {
+ historyButton.style.backgroundColor = 'green';
+        historyButton.style.color = 'white';
+  donationButton.style.backgroundColor = 'transparent';
+        donationButton.style.color = 'black';
+    });
+});
+
+
+// colour end
   document.getElementById('addDonateButton').addEventListener('click', function() {
       const inputField = document.getElementById('input-field');
       const amount = parseFloat(inputField.value);
@@ -160,7 +186,32 @@ if (amount > 0) {
           alert('Please enter a positive amount.');
       }
   });
-</script>
+  // <!-- second -->
+  document.getElementById('addDonateButtonSecond').addEventListener('click', function() {
+      const inputField = document.getElementById('input-field');
+      const amount = parseFloat(inputField.value);
+if (amount > 0) {
+          document.getElementById('modal-message').innerText = `You are about to donate BDT ${amount}. Thank you!`;
+          document.getElementById('donation_modal').checked = true; 
+      } else {
+          alert('Please enter a positive amount.');
+      }
+  });
+
+// third
+document.getElementById('addDonateButtonthird').addEventListener('click', function() {
+      const inputField = document.getElementById('input-field');
+      const amount = parseFloat(inputField.value);
+if (amount > 0) {
+          document.getElementById('modal-message').innerText = `You are about to donate BDT ${amount}. Thank you!`;
+          document.getElementById('donation_modal').checked = true; 
+      } else {
+          alert('Please enter a positive amount.');
+      }
+  });
+  </script>
+
+
 
 
 

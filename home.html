@@ -4,31 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-   
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>Welcome to the Home Page</h1>
-    <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-2xl">what is the document object model( Dom)</div>
+  <header class="sticky top-0 z-50">
+    <div class="navbar bg-gray-100 w-full">
+      <div class="navbar-start px-8">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <img src="assets/logo.png" alt="">
+            <li class="text-base font-medium"><a>Donate Bangladesh</a></li>
+          </ul>
+        </div>
+        <a href="home.html" class="btn">Home</a>
+      </div>
+      <div class="navbar-center hidden lg:flex px-8">
+        <ul class="menu menu-horizontal px-1">
+          <img src="assets/logo.png" alt="">
+          <li class="text-base font-medium"><a>Donate Bangladesh</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end px-8">
+        <img src="assets/coin.png" alt="">
+        <div id="main-money">55000 BDT</div>
+      </div>
+    </div>
+   <!-- Button Section with Blurry Background -->
+    <div class="py-8 text-center relative">
+      <!-- Blurry Background -->
+      <div class="absolute inset-0 bg-white/30 backdrop-blur-md rounded-lg"></div>
+      
+      <!-- Buttons with z-index to ensure they appear above the blurry background -->
+     
+    </div>
+  </header>
+
+
+
+
+
+    <div class="border w-3/4 mx-auto space-y-5 mt-8">
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-3xl font-medium">how so you select element from dom</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p class="text-2xl">Understanding the DOM as an Object Hierarchy.</p>
+        </div>
+      </div>
+     
+    
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-3xl font-medium">how so you select element from dom</div>
+        <div class="collapse-content">
+          <p class="text-2xl">Understanding the DOM as an Object Hierarchy.</p>
         </div>
       </div>
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">how so you select element from dom</div>
+        <div class="collapse-title text-3xl font-medium">how so you select element from dom</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p class="text-2xl">Understanding the DOM as an Object Hierarchy.</p>
         </div>
       </div>
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">what is event delegation in the context of the dom</div>
+        <div class="collapse-title text-3xl font-medium">how so you select element from dom</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p class="text-2xl">Understanding the DOM as an Object Hierarchy.</p>
         </div>
       </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-3xl font-medium">how so you select element from dom</div>
+        <div class="collapse-content">
+          <p class="text-2xl">Understanding the DOM as an Object Hierarchy.</p>
+        </div>
+      </div>
+
+    </div>
+    
   
 </body>
 </html>

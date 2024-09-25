@@ -9,7 +9,8 @@ function getTextFieldById(id){
     return textNumber;
 }
 function  showAnSectionById(id){
-    document.getElementById('donationDiv').classList.add('hidden')
+    document.getElementById('donationDivNew').classList = ""
+    document.getElementById('donationDivNew').classList.add('hidden')
     document.getElementById('historyDiv').classList.add('hidden')
     document.getElementById(id).classList.remove('hidden')
 }
